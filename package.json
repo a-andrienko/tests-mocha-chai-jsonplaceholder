@@ -1,0 +1,26 @@
+{
+  "name": "async-test-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run test-watch",
+    "test": "mocha -r ts-node/register ./*.test.ts",
+    "test-watch": "nodemon -e ts -w '../async-test-practice' -x 'npm test'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.3",
+    "@types/node": "^10.5.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "ts-node": "^7.0.0"
+  },
+  "dependencies": {
+    "chai-http": "^4.0.0",
+    "typescript": "^2.9.2"
+  }
+}
