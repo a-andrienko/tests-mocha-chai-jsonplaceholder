@@ -32,6 +32,15 @@ describe('Posts test', () => {
            })
    });
 
+   it('should send an error if the path is invalid', (done) => {
+    chai.request(server)
+        .get('/postsasdf/')
+        .end((err, res) => {
+            res.should.have.status(404);
+            done();
+        })
+   });
+
    it('should add a new post with a sucess status', (done) => {
        chai.request(server)
             .post('/posts')
@@ -45,7 +54,7 @@ describe('Posts test', () => {
             })
    });
 
-   generatedId = 4;
+   generatedId = 45;
 
    it('should delete a newly added post', (done) => {
     chai.request(server)

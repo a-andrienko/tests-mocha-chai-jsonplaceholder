@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run test-watch",
     "test": "mocha -r ts-node/register **/*.test.ts",
-    "test-watch": "nodemon --exec 'npm test'"
+    "test-watch": "nodemon -e ts -w '../test-practice' -x 'npm test'"
   },
   "author": "",
   "license": "ISC",
