@@ -2,13 +2,13 @@
 const chaiM: any = require('chai');
 const chaiHttp: any  = require('chai-http');
 import {expect} from 'chai';
-const should: any  = require('chai').should();
+const should = require('chai').should();
 
 // require local dependencies
 const server = 'https://jsonplaceholder.typicode.com';
 const totalPostsNumber = 100;
 
-// initialize use of http requestscle
+// initialize use of http request
 chaiM.use(chaiHttp);
 
 // generate some mocked data 
