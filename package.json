@@ -1,21 +1,12 @@
 {
-<<<<<<< HEAD
   "name": "async-test-practice",
-=======
-  "name": "test-practice",
->>>>>>> 02e2aec3cbc29bdc1a4ec8bda05fbdfb62f68641
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npm run test-watch",
-<<<<<<< HEAD
     "test": "mocha -r ts-node/register ./*.test.ts",
     "test-watch": "nodemon -e ts -w '../async-test-practice' -x 'npm test'"
-=======
-    "test": "mocha -r ts-node/register **/*.test.ts",
-    "test-watch": "nodemon -e ts -w '../test-practice' -x 'npm test'"
->>>>>>> 02e2aec3cbc29bdc1a4ec8bda05fbdfb62f68641
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +15,6 @@
     "@types/mocha": "^5.2.3",
     "@types/node": "^10.5.0",
     "chai": "^4.1.2",
-<<<<<<< HEAD
     "mocha": "^5.2.0",
     "nodemon": "^1.17.5",
     "ts-node": "^7.0.0"
@@ -32,17 +22,5 @@
   "dependencies": {
     "chai-http": "^4.0.0",
     "typescript": "^2.9.2"
-=======
-    "chai-http": "^4.0.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.17.5",
-    "ts-node": "^7.0.0",
-    "typescript": "^2.9.2"
-  },
-  "dependencies": {
-    "fetch": "^1.1.0",
-    "jsonplaceholder": "^0.3.3",
-    "node-fetch": "^2.1.2"
->>>>>>> 02e2aec3cbc29bdc1a4ec8bda05fbdfb62f68641
   }
 }
